@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Media Gerbang Logika — Pendidikan Fisika</title>
+<link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="top"><nav class="nav">
+<a class="brand" href="index.html"><span class="brand-badge">Φ</span><span>LogikaQuest<br><small style="font-weight:400">Pend. Fisika</small></span></a>
+<div class="nav-links">
+<a href="index.html">Beranda</a><a href="materi/dasar.html">Materi</a><a href="simulator.html">Simulator</a><a href="kuis.html">Kuis</a>
+<button class="btn small ghost" onclick="toggleTheme()">🌙/☀️</button>
+</div></nav></header>
+<main>
+<section class="hero">
+<div>
+<span class="tag">Elektronika Digital • Semester 3-4</span>
+<h1>Media Pembelajaran Gerbang Logika untuk Mahasiswa Pendidikan Fisika</h1>
+<p class="muted">Belajar AND → XNOR dengan simulator toggle interaktif, tabel kebenaran live, studi kasus sensor fisika, dan kuis 15 soal dengan skor tersimpan otomatis.</p>
+<p><a class="btn" href="materi/dasar.html">Mulai Belajar →</a> <a class="btn gold" href="simulator.html">Buka Lab Virtual ⚡</a></p>
+<div class="progress"><div id="progressBar"></div></div>
+<p class="muted" id="progressTxt"></p>
+</div>
+<div class="hero-art">
+<div><b style="font-size:1.2rem">Y = A · B + Ā ⊕ B</b></div>
+<div class="chip-row"><span class="chip">AND 7408</span><span class="chip">OR 7432</span><span class="chip">NOT 7404</span><span class="chip">NAND 7400</span><span class="chip">5V TTL</span></div>
+<p style="opacity:.9">Konteks fisika: sensor LDR, alarm lab, Arduino, half-adder. Semua bisa dicoba langsung tanpa install.</p>
+</div>
+</section>
+
+<h2>Capaian Pembelajaran</h2>
+<div class="grid cols3">
+<div class="card"><h3>🎯 CP-1</h3><p>Menjelaskan konsep biner, level tegangan TTL/CMOS, dan fungsi 7 gerbang dasar.</p></div>
+<div class="card"><h3>🔬 CP-2</h3><p>Menganalisis tabel kebenaran dan merancang rangkaian kombinasi sederhana (alarm, half-adder).</p></div>
+<div class="card"><h3>⚙️ CP-3</h3><p>Mengaitkan gerbang logika dengan eksperimen fisika: sensor, mikrokontroler, instrumentasi.</p></div>
+</div>
+
+<h2>Peta Modul</h2>
+<div class="grid cols3">
+<div class="card" data-modul="dasar"><h3>1. Dasar Digital <span class="done-badge muted"></span></h3><p>Biner, TTL 0–0.8V / 2–5V, IC 74xx.</p><a class="btn small" href="materi/dasar.html">Buka →</a></div>
+<div class="card" data-modul="dasar2"><h3>2. AND • OR • NOT <span class="done-badge muted"></span></h3><p>Tiga gerbang fondasi + simbol ANSI.</p><a class="btn small" href="materi/and-or-not.html">Buka →</a></div>
+<div class="card" data-modul="nand"><h3>3. NAND • NOR <span class="done-badge muted"></span></h3><p>Gerbang universal + pembuktian.</p><a class="btn small" href="materi/nand-nor.html">Buka →</a></div>
+<div class="card" data-modul="xor"><h3>4. XOR • XNOR <span class="done-badge muted"></span></h3><p>Deteksi beda, komparator, half-adder.</p><a class="btn small" href="materi/xor-xnor.html">Buka →</a></div>
+<div class="card" data-modul="komb"><h3>5. Kombinasi + Kasus Fisika <span class="done-badge muted"></span></h3><p>Alarm lab, LDR, Arduino.</p><a class="btn small" href="materi/kombinasi.html">Buka →</a></div>
+<div class="card"><h3>⚡ Lab Virtual</h3><p>Toggle 0/1, LED output, bandingkan 2 gerbang.</p><a class="btn small gold" href="simulator.html">Simulasi →</a></div>
+</div>
+
+<h2>Evaluasi</h2>
+<div class="card"><h3>📝 Kuis 15 Soal — Skor terbaik: <span id="bestScore">0</span>/15</h3>
+<p class="muted">Acak, pembahasan tiap soal, tersimpan di browser (localStorage). Tanpa login.</p>
+<a class="btn" href="kuis.html">Kerjakan Kuis →</a></div>
+</main>
+<footer>Media Pembelajaran Gerbang Logika • Pendidikan Fisika • HTML+CSS+JS • GitHub Pages ready</footer>
+<script src="js/main.js"></script>
+</body></html>

@@ -24,7 +24,7 @@
     document.querySelectorAll('[data-modul]').forEach(el=>{
       const id=el.getAttribute('data-modul');
       const badge=el.querySelector('.done-badge');
-      if(s.has(id)&&badge){badge.textContent='✓ Selesai';}
+      if(s.has(id)&&badge){badge.innerHTML='<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5 10 18 19.5 6.5"/></svg> Selesai';}
     });
     const bar=document.getElementById('progressBar');
     if(bar){bar.style.width=Math.round(s.size/5*100)+'%';}

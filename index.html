@@ -8,7 +8,7 @@
 <a class="brand" href="index.html"><span class="brand-badge">Φ</span><span>LogikaQuest<br><small style="font-weight:400">Pend. Fisika</small></span></a>
 <div class="nav-links">
 <a href="index.html">Beranda</a><a href="materi/dasar.html">Materi</a><a href="simulator.html">Simulator</a><a href="kuis.html">Kuis</a>
-<button class="btn small ghost" onclick="toggleTheme()">🌙/☀️</button>
+<button class="btn small ghost" onclick="toggleTheme()"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5 5l1.8 1.8M17.2 17.2 19 19M19 5l-1.8 1.8M6.8 17.2 5 19"/></svg> Tema</button>
 </div></nav></header>
 <main>
 <section class="hero">
@@ -16,7 +16,7 @@
 <span class="tag">Elektronika Digital • Semester 3-4</span>
 <h1>Media Pembelajaran Gerbang Logika untuk Mahasiswa Pendidikan Fisika</h1>
 <p class="muted">Belajar AND → XNOR dengan simulator toggle interaktif, tabel kebenaran live, studi kasus sensor fisika, dan kuis 15 soal dengan skor tersimpan otomatis.</p>
-<p><a class="btn" href="materi/dasar.html">Mulai Belajar →</a> <a class="btn gold" href="simulator.html">Buka Lab Virtual ⚡</a></p>
+<p><a class="btn" href="materi/dasar.html">Mulai Belajar →</a> <a class="btn gold" href="simulator.html">Buka Lab Virtual <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4.5 13.5H11L10 22l8.5-11.5H12L13 2z"/></svg></a></p>
 <div class="progress"><div id="progressBar"></div></div>
 <p class="muted" id="progressTxt"></p>
 </div>
@@ -29,9 +29,9 @@
 
 <h2>Capaian Pembelajaran</h2>
 <div class="grid cols3">
-<div class="card"><h3>🎯 CP-1</h3><p>Menjelaskan konsep biner, level tegangan TTL/CMOS, dan fungsi 7 gerbang dasar.</p></div>
-<div class="card"><h3>🔬 CP-2</h3><p>Menganalisis tabel kebenaran dan merancang rangkaian kombinasi sederhana (alarm, half-adder).</p></div>
-<div class="card"><h3>⚙️ CP-3</h3><p>Mengaitkan gerbang logika dengan eksperimen fisika: sensor, mikrokontroler, instrumentasi.</p></div>
+<div class="card"><h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none"/></svg> CP-1</h3><p>Menjelaskan konsep biner, level tegangan TTL/CMOS, dan fungsi 7 gerbang dasar.</p></div>
+<div class="card"><h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6"/><path d="M10 3v5L5.5 17a2.5 2.5 0 0 0 2.2 3.5h8.6a2.5 2.5 0 0 0 2.2-3.5L14 8V3"/><path d="M7.5 14h9"/></svg> CP-2</h3><p>Menganalisis tabel kebenaran dan merancang rangkaian kombinasi sederhana (alarm, half-adder).</p></div>
+<div class="card"><h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M18.7 5.3l-2.1 2.1M7.4 16.6l-2.1 2.1"/></svg> CP-3</h3><p>Mengaitkan gerbang logika dengan eksperimen fisika: sensor, mikrokontroler, instrumentasi.</p></div>
 </div>
 
 <h2>Peta Modul</h2>
@@ -41,11 +41,11 @@
 <div class="card" data-modul="nand"><h3>3. NAND • NOR <span class="done-badge muted"></span></h3><p>Gerbang universal + pembuktian.</p><a class="btn small" href="materi/nand-nor.html">Buka →</a></div>
 <div class="card" data-modul="xor"><h3>4. XOR • XNOR <span class="done-badge muted"></span></h3><p>Deteksi beda, komparator, half-adder.</p><a class="btn small" href="materi/xor-xnor.html">Buka →</a></div>
 <div class="card" data-modul="komb"><h3>5. Kombinasi + Kasus Fisika <span class="done-badge muted"></span></h3><p>Alarm lab, LDR, Arduino.</p><a class="btn small" href="materi/kombinasi.html">Buka →</a></div>
-<div class="card"><h3>⚡ Lab Virtual</h3><p>Toggle 0/1, LED output, bandingkan 2 gerbang.</p><a class="btn small gold" href="simulator.html">Simulasi →</a></div>
+<div class="card"><h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4.5 13.5H11L10 22l8.5-11.5H12L13 2z"/></svg> Lab Virtual</h3><p>Toggle 0/1, LED output, bandingkan 2 gerbang.</p><a class="btn small gold" href="simulator.html">Simulasi →</a></div>
 </div>
 
 <h2>Evaluasi</h2>
-<div class="card"><h3>📝 Kuis 15 Soal — Skor terbaik: <span id="bestScore">0</span>/15</h3>
+<div class="card"><h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8L19.5 8v13.5h-13.5z"/><path d="M13.5 2.5V8H19.5"/><path d="M9 12.5h6M9 16h6"/></svg> Kuis 15 Soal — Skor terbaik: <span id="bestScore">0</span>/15</h3>
 <p class="muted">Acak, pembahasan tiap soal, tersimpan di browser (localStorage). Tanpa login.</p>
 <a class="btn" href="kuis.html">Kerjakan Kuis →</a></div>
 </main>

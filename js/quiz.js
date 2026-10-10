@@ -51,9 +51,9 @@ function selesai(){
   const isBest=skor>best;
   if(isBest)localStorage.setItem('gl_best',skor);
   const nilai=Math.round(skor/order.length*100);
-  let predikat=nilai>=85?'Sangat Baik 🎉':nilai>=70?'Baik 👍':nilai>=55?'Cukup 📖':'Perlu Belajar Lagi 💪';
+  let predikat=nilai>=85?'Sangat Baik':nilai>=70?'Baik':nilai>=55?'Cukup':'Perlu Belajar Lagi';
   document.getElementById('soalArea').innerHTML='';
-  document.getElementById('hasil').innerHTML=`<div class="card"><h3>Nilai: ${nilai} — ${predikat}</h3><p>Benar ${skor} dari ${order.length}. Skor terbaik tersimpan: <b>${Math.max(best,skor)}</b></p><button class="btn small" onclick="markDone('kuis')">Tandai Selesai ✓</button></div>`;
+  document.getElementById('hasil').innerHTML=`<div class="card"><h3>Nilai: ${nilai} — ${predikat}</h3><p>Benar ${skor} dari ${order.length}. Skor terbaik tersimpan: <b>${Math.max(best,skor)}</b></p><button class="btn small" onclick="markDone('kuis')">Tandai Selesai <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5 10 18 19.5 6.5"/></svg></button></div>`;
   document.getElementById('btnUlang').style.display='inline-block';
 }
 document.addEventListener('DOMContentLoaded',()=>{
